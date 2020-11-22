@@ -1,7 +1,9 @@
 <?php
 
 use Illuminate\Support\Str;
+// use App\helpers;
 $db_config = get_db_config();
+
 return [
 
     /*
@@ -15,7 +17,7 @@ return [
     |
     */
 
-    'default' => $db_config('DB_CONNECTION'),
+    'default' => get_db_config('DB_CONNECTION'),
 
     /*
     |--------------------------------------------------------------------------
